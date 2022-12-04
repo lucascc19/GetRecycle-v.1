@@ -5,6 +5,8 @@
   font-family: 'Nunito', sans-serif;
 }
 
-html, body, footer {
-  background-color: #222;
+html, body, #root {
+  background-color: #409A54;
+  /* display: flex; */
+  height: 100%
 }
