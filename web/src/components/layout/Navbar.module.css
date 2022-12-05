@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
+  padding-top: 2.5em;
 }
 
 .logo{
@@ -15,6 +15,12 @@
   border: none;
   border-radius: 20px;
   background-color: #388249;
+  cursor: pointer;
+  transition: 600ms ease;
+}
+
+.button:hover {
+  background-color: #37DF5D;
 }
 
 .button a {

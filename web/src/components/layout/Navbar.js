@@ -16,11 +16,6 @@ function Navbar() {
         <button className={styles.button}>
           <Link to="/user" >Acesso restrito</Link>
         </button>
-        {/* <ul className={styles.list}>
-          <li>
-            <Link to="/user">Acesso restrito</Link>
-          </li>
-        </ul> */}
       </Container>
     </nav>
   )
