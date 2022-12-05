@@ -1,4 +1,4 @@
-.contianer {
+.container{ 
   width: 1200px;
   display: flex;
   justify-content: space-between;
@@ -10,11 +10,11 @@
   min-height: 75%;
 }
 
-/* .start {
+.start{
   justify-content: flex-start;
 }
 
 .column {
-  flex-direction: column;
-  justify-content: flex-start;
-} */
+  flex-direction:column;
+  justify-content: start;
+}

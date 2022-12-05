@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom'
 
-import Container from '../Container'
-import styles from '../Navbar/style.css'
-import logo from '../../../img/Logo.svg'
+import Container from './Container'
 
-function Navbar(){
+import styles from './Container.module.css'
+import logo from '../../img/Logo.svg'
+
+function Navbar() {
   return (
     <nav className={styles.navbar}>
       <Container>
@@ -12,7 +13,7 @@ function Navbar(){
           <img src={logo} alt="GetRecycle" />
         </Link>
         <ul className={styles.list}>
-          <li className={styles.item}>
+          <li>
             <Link to="/user">Acesso restrito</Link>
           </li>
         </ul>
