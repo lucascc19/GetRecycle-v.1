@@ -1,0 +1,20 @@
+.footer{
+  width: 89%;
+  display: flex;
+  justify-content: end;
+  margin: 0 auto;
+}
+
+.button {
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 30px;
+  background-color: #FFD666;
+  cursor: pointer;
+  transition: 600ms ease;
+}
+
+.button:hover {
+  background-color: #B1FF96;
+}
