@@ -1,16 +1,19 @@
 .container {
   width: 89%;
   display: flex;
+  align-items: center;
   margin: 0 auto;
 }
 
-.recycle {
-  width: 579px;
-  height: 579px;
+.background_image {
+  width: 500px;
+  height: 500px;
+  margin-left: 60px;
+  display: flex;
 }
 
 .box_text {
-  margin-top: 120px;
+  margin-top: 50px;
 }
 
 .title {
@@ -18,14 +21,14 @@
   font-weight: 700;
   line-height: 68px;
   width: 394px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #FFF;
 }
 
 .subtitle {
   font-size: 24px;
   font-weight: 5 00;
-  line-height: 34px;
-  width: 320px;
+  line-height: 28px;
+  width: 300px;
   color: #FFF;
 }

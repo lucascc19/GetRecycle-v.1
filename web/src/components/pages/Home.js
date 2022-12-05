@@ -12,7 +12,7 @@ function Home(){
           <h1 className={styles.title}>Comece você a transformar o mundo</h1>
           <p className={styles.subtitle}>Aqui você encontra pontos de coleta com eficiência</p>
         </div>
-        <img src={recycle} alt="Recycling" className={styles.recycle} />
+        <img src={recycle} alt="Recycling" className={styles.background_image} />
       </section>
     </div>
 
