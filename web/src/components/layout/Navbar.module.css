@@ -1,12 +1,32 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: #222;
+  align-items: center;
   padding: 1em;
+}
+
+.logo{
+  width: 200px;
+}
+
+.button{
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+  background-color: #388249;
+}
+
+.button a {
+  font-weight: 800;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
 }
 
 .list{
   display:flex;
   list-style: none;
   align-items: center;
+  text-decoration: none;
 }
