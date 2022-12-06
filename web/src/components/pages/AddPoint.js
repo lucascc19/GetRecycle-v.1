@@ -8,7 +8,6 @@ function AddPoint(){
   return (
     <div className={styles.container}>
       <Sidebar />
-      <p>Adicione um ponto de coleta</p>
       <Form />
     </div>
   )

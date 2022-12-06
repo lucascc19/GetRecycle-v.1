@@ -1,15 +1,3 @@
 .container {
-  height: 100vh;
   background-color: #EBF5EB;
-}
-
-.container p {
-  font-size: 18px;
-  font-weight: 600;
-  text-align: center;
-
-  color: #8FA7B3;
-
-  padding: 40px 0;
-  margin-left: 96px;
 }
