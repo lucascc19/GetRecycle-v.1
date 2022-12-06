@@ -1,6 +1,14 @@
 import { FiUpload } from 'react-icons/fi'
 import styles from '../styles/Form.module.css'
 
+import lampada from '../../img/lampada.png'
+import bateria from '../../img/bateria.png'
+import papel from '../../img/papel.png'
+import eletronicos from '../../img/eletronicos.png'
+import lixo_organico from '../../img/lixo_organico.png'
+import oleo from '../../img/oleo.png'
+import SubmitButton from './SubmitButton'
+
 function Form() {
   return (
     <section className={styles.container}>
@@ -81,20 +89,43 @@ function Form() {
           <fieldset>
             <div className={styles.area_itens}>
               <legend>Ítens de coleta</legend>
-              <p>Adicione um ponto</p>
             </div>
-            <div>
-              <label>Rua</label>
-              <input type="text" />
+            <div className={styles.itens}>
+              <div>
+                <img src={lampada} alt="Lâmpada" />
+                <label for="selected">Lâmpadas</label>
+                <input id="selected" type="checkbox"></input>
+              </div>
+              <div>
+                <img src={bateria} alt="Bateria" />
+                <label for="selected">Baterias</label>
+                <input id="selected" type="checkbox"></input>
+              </div>
+              <div>
+                <img src={papel} alt="Pepel" />
+                <label for="selected">Pepel</label>
+                <input id="selected" type="checkbox"></input>
+              </div>
             </div>
-            <div>
-              <label>Estado (UF)</label>
-            </div>
-            <div>
-              <label>Cidade</label>
-              <input type="text" />
+            <div className={styles.itens}>
+              <div>
+                <img src={eletronicos} alt="Eletrônico" />
+                <label for="selected">Eletrônicos</label>
+                <input id="selected" type="checkbox"></input>
+              </div>
+              <div>
+                <img src={lixo_organico} alt="Orgânico" />
+                <label for="selected">Orgânicos</label>
+                <input id="selected" type="checkbox"></input>
+              </div>
+              <div>
+                <img src={oleo} alt="Óleo" />
+                <label for="selected">Óleo</label>
+                <input id="selected" type="checkbox"></input>
+              </div>
             </div>
           </fieldset>
+          <SubmitButton text="Cadastrar"/>
         </form>
       </div>
     </section>
