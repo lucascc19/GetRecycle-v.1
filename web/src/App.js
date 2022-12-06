@@ -4,8 +4,6 @@ import Home from './components/pages/Home'
 import RestrictedAccess from './components/pages/RestrictedAccess'
 import Map from './components/pages/Map'
 
-import Footer from './components/layout/Footer'
-
 function App() {
   return (
    <Router>
@@ -20,7 +18,6 @@ function App() {
         <Map />
       </Route>
     </Switch>
-    <Footer />
    </Router>
   )
 }
