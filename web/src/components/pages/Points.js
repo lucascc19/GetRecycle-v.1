@@ -51,7 +51,7 @@ function Points() {
   }
 
   return (
-    <section className={styles.container}>
+    <section className={styles.points_container}>
       <Sidebar />
       <div>
         <div className={styles.add}>
@@ -63,7 +63,7 @@ function Points() {
         <div className={styles.message}>
           {message && <Message type="success" msg={message} />}
           {pointMessage && <Message type="success" msg={pointMessage} />}
-          <div className={styles.flex_card}>
+          <section className={styles.flex_card}>
             {points.length > 0 &&
               points.map((point) => (
                 <PointCard 
@@ -77,10 +77,10 @@ function Points() {
               <div>
                 {!removeLoading && <Loading />}
                 {removeLoading && points.length === 0 && (
-                  <p>Não há projetos cadastrados!</p>
+                <p>Não há projetos cadastrados!</p>
                 )}
               </div>
-          </div>
+          </section>
         </div>
       </div>
     </section>

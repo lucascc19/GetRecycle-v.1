@@ -1,20 +1,21 @@
-.container {
+.point_container {
   background-color: #EBF5EB;
   height: 100vh;
-  text-align: start;
-  padding-left: 196px;
-}
-
-.container h1{
-  text-align: start;
-  color: #4D6F80;
-  padding: 40px 0; 
+  /* text-align: start;
+  padding-left: 196px; */
 }
 
 .area {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.area h1{
+  text-align: start;
+  color: #4D6F80;
+  padding: 40px 0; 
+  margin-left: 196px;
 }
 
 .area button {
@@ -29,23 +30,51 @@
   cursor: pointer;
   font-size: 18px;
   font-weight: 800;
+  transition: .5s;
 }
 
-.point_details {
-  margin-top: 20px;
+.area button:hover {
+  background-color: #37DF5D;
 }
 
-.point_details span {
-  font-size: 18px;
+.message {
+  margin-left: 196px;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  width: 500px;
+  background-color: #FFF;
+  border: 1px solid #D3E2E5;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+.form p:first-child {
+  font-size: 32px;
   font-weight: 700;
-  color: #4D6F80;
+  color: #4F4F4F;
+  margin-bottom: 20px;
 }
 
-.point_details p {
+.form p:nth-child(n+2) {
   font-size: 18px;
+  margin-bottom: 5px;
 }
 
-.title {
-  font-weight: 700;
-  color: #4D6F80;
+.form span {
+  font-size: 20px;
+  font-weight: 800;
+  color: #4F4F4F;
 }
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

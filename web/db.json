@@ -1,9 +1,9 @@
 {
   "points": [
     {
-      "name": "Ecopoint",
+      "name": "Ecopoint Russas",
       "email": "lucas@alu.ufc.br",
-      "contact": "(85) 9 99684503",
+      "contact": "(85) 9 99684502",
       "address": "Vicente Carlos Santiago, 1661",
       "state": "CE",
       "city": "Fortaleza",
@@ -12,6 +12,84 @@
         "name": "Papéis e papelão"
       },
       "id": 2
+    },
+    {
+      "name": "Ecopoint Fortaleza",
+      "email": "lucasroliveira19@outlook.com",
+      "contact": "(85) 9 99684503",
+      "address": "Vicente Carlos Santiago, 1661",
+      "state": "CE",
+      "city": "Fortaleza",
+      "category": {
+        "id": "2",
+        "name": "Pilhas e baterias"
+      },
+      "id": 3
+    },
+    {
+      "name": "Ecopoint Canindé",
+      "email": "lucasroliveira19@outlook.com",
+      "contact": "(85) 9 99684503",
+      "address": "Vicente Carlos Santiago, 1661",
+      "state": "CE",
+      "city": "Fortaleza",
+      "category": {
+        "id": "5",
+        "name": "Resíduos Orgânicos"
+      },
+      "id": 4
+    },
+    {
+      "name": "Ecopoint Quixadá",
+      "email": "lucasroliveira19@outlook.com",
+      "contact": "(85) 9 99684503",
+      "address": "Vicente Carlos Santiago, 1661",
+      "state": "CE",
+      "city": "Fortaleza",
+      "category": {
+        "id": "2",
+        "name": "Pilhas e baterias"
+      },
+      "id": 5
+    },
+    {
+      "name": "Ecopoint Sobral",
+      "email": "lucasroliveira19@outlook.com",
+      "contact": "(85) 9 99684503",
+      "address": "Vicente Carlos Santiago, 1661",
+      "state": "CE",
+      "city": "Fortaleza",
+      "category": {
+        "id": "3",
+        "name": "Papéis e papelão"
+      },
+      "id": 6
+    },
+    {
+      "name": "Criar componentes",
+      "email": "lucasroliveira19@outlook.com",
+      "contact": "(85) 9 99684503",
+      "address": "Vicente Carlos Santiago, 1661",
+      "state": "CE",
+      "city": "Fortaleza",
+      "category": {
+        "id": "1",
+        "name": "Lâmpadas"
+      },
+      "id": 8
+    },
+    {
+      "name": "Lucas Rodrigues Oliveira",
+      "email": "lucasroliveira19@outlook.com",
+      "contact": "(85) 9 99684503",
+      "address": "Vicente Carlos Santiago, 1661",
+      "state": "CE",
+      "city": "Fortaleza",
+      "category": {
+        "id": "3",
+        "name": "Papéis e papelão"
+      },
+      "id": 9
     }
   ],
   "categories": [

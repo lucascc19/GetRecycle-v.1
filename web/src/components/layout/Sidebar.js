@@ -1,12 +1,12 @@
 import { FiArrowLeft } from 'react-icons/fi';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 import logo from '../../img/Logo-min.png'
 
 import styles from '../styles/Sidebar.module.css'
 
 function Sidebar() {
-  const goBack = useNavigate();
+  const {goBack} = useHistory();
 
     return (
         <aside className={styles.app_sidebar}>
@@ -15,7 +15,7 @@ function Sidebar() {
         </Link>
 
         <footer>
-          <button type="button" onClick={() => goBack(-1)}>
+          <button type="button" onClick={goBack}>
             <FiArrowLeft size={24} color="#FFF" />
           </button>
         </footer>

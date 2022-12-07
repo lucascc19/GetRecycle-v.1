@@ -1,9 +1,9 @@
-.container {
+.points_container {
   background-color: #EBF5EB;
   height: 100vh;
 }
 
-.container div h1{
+.points_container div h1{
   text-align: start;
   color: #4D6F80;
   padding: 40px 0;
@@ -19,7 +19,7 @@
 .add button {
   margin-right: 112px;
   background-color: #39A151;
-  width: 250px;
+  width: 240px;
   height: 64px;
   border-radius: 20px;
   transition: .5s;
@@ -38,6 +38,9 @@
   margin-left: 196px;
 }
 
-.flex_card {
+section .flex_card {
   display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }

@@ -1,6 +1,7 @@
 .container {
   width: 89%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
 }
@@ -35,7 +36,7 @@
 .background_image {
   width: 600px;
   height: 600px;
-  margin-left: 80px;
+  margin-left: 100px;
   display: flex;
 }
 
@@ -44,7 +45,7 @@
   display: flex;
   justify-content: end;
   margin: 0 auto;
-  margin-top: -135px;
+  margin-top: -146px;
 }
 
 .button {
