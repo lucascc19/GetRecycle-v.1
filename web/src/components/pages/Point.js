@@ -5,6 +5,7 @@ import Sidebar from '../layout/Sidebar'
 import Loading from '../layout/Loading'
 import styles from '../styles/Point.module.css'
 import PointForm from '../form/PointForm'
+import Message from '../layout/Message'
 
 function Point() {
   const { id } = useParams()
@@ -13,8 +14,6 @@ function Point() {
   const [showPointForm, setShowPointForm] = useState(false)
   const [message, setMessage] = useState('')
   const [type, setType] = useState('success')
-
-
 
   useEffect(() => {
     // to see the loading
@@ -66,6 +65,7 @@ function Point() {
                 {!showPointForm ? 'Editar ponto' : 'Fechar'}
               </button>
             </div>  
+            {message && <Message type={type} msg={message} />}
             {!showPointForm ? (
               <div className={styles.point_details}>
                 <p className={styles.title}>

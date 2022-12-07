@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import NewPoint from './components/pages/NewPoint'
 import Home from './components/pages/Home'
@@ -10,26 +10,14 @@ import Point from './components/pages/Point'
 function App() {
   return (
    <Router>
-    <Switch>
-      <Route exact path="/">
-        <Home />
-      </Route>
-      <Route path="/user">
-        <RestrictedAccess />
-      </Route>
-      <Route path="/map">
-        <Map />
-      </Route>
-      <Route path="/newpoint">
-        <NewPoint />
-      </Route>
-      <Route path="/points/">
-        <Points />
-      </Route>
-      <Route path="/point/:id">
-        <Point />
-      </Route>
-    </Switch>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/user" element={<RestrictedAccess />} />
+      <Route path="/map" element={<Map />} />
+      <Route path="/newpoint" element={<NewPoint />} />
+      <Route path="/points" element={<Points />} />
+      <Route path="/point/:id" element={<Point />} />
+    </Routes>
    </Router>
   )
 }

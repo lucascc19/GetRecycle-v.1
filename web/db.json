@@ -14,7 +14,7 @@
       "id": 2
     },
     {
-      "name": "Sistema de Alocação",
+      "name": "Ecopoint Quixadá",
       "email": "lucas@alu.ufc.br",
       "contact": "(85) 9 99684503",
       "address": "Vicente Carlos Santiago, 1661",
@@ -25,6 +25,122 @@
         "name": "Pilhas e baterias"
       },
       "id": 3
+    },
+    {
+      "name": "Ecopoint Russas",
+      "email": "lucasroliveira19@outlook.com",
+      "contact": "(85) 9 99684503",
+      "address": "Vicente Carlos Santiago, 1661",
+      "state": "CE",
+      "city": "Fortaleza",
+      "category": {
+        "id": "4",
+        "name": "Resíduos Eletrônicos"
+      },
+      "id": 4
+    },
+    {
+      "name": "Ecopoint Canindé",
+      "email": " lucas@lucas.com",
+      "contact": "(85) 9 99684503",
+      "address": "Vicente Carlos Santiago, 1661",
+      "state": "CE",
+      "city": "Fortaleza",
+      "category": {
+        "id": "3",
+        "name": "Papéis e papelão"
+      },
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "name": "Criar componentes",
+      "email": "lucasroliveira19@outlook.com",
+      "contact": "(85) 9 99684503",
+      "address": "Vicente Carlos Santiago, 1661",
+      "state": "CE",
+      "city": "Fortaleza",
+      "category": {
+        "id": "4",
+        "name": "Resíduos Eletrônicos"
+      },
+      "id": 7
+    },
+    {
+      "name": "Teste",
+      "email": "lucasroliveira19@outlook.com",
+      "contact": "(85) 9 99684503",
+      "address": "Vicente Carlos Santiago, 1661",
+      "state": "CE",
+      "city": "Fortaleza",
+      "category": {
+        "id": "2",
+        "name": "Pilhas e baterias"
+      },
+      "id": 8
+    },
+    {
+      "name": "Criar componentes",
+      "email": "lucasroliveira19@outlook.com",
+      "contact": "(85) 9 99684503",
+      "address": "Vicente Carlos Santiago, 1661",
+      "state": "CE",
+      "city": "Fortaleza",
+      "category": {
+        "id": "3",
+        "name": "Papéis e papelão"
+      },
+      "id": 9
+    },
+    {
+      "name": "Landing Page",
+      "email": "lucasroliveira19@outlook.com",
+      "contact": "(85) 9 99684503",
+      "address": "Vicente Carlos Santiago, 1661",
+      "state": "CE",
+      "city": "Fortaleza",
+      "category": {
+        "id": "3",
+        "name": "Papéis e papelão"
+      },
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "name": "Protótipo do GetRecycle",
+      "email": "lucasroliveira19@outlook.com",
+      "contact": "(85) 9 99684503",
+      "address": "Vicente Carlos Santiago, 1661",
+      "state": "CE",
+      "city": "Fortaleza",
+      "category": {
+        "id": "2",
+        "name": "Pilhas e baterias"
+      },
+      "id": 12
+    },
+    {
+      "id": 13
+    },
+    {
+      "name": "Ponto Teste",
+      "email": "lucasroliveira19@outlook.com",
+      "contact": "(85) 9 99684503",
+      "address": "Vicente Carlos Santiago, 1661",
+      "state": "CE",
+      "city": "Fortaleza",
+      "category": {
+        "id": "6",
+        "name": "Óleo de cozinha"
+      },
+      "id": 14
+    },
+    {
+      "id": 15
     }
   ],
   "categories": [
