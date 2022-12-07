@@ -1,0 +1,51 @@
+.container {
+  background-color: #EBF5EB;
+  height: 100vh;
+  text-align: start;
+  padding-left: 196px;
+}
+
+.container h1{
+  text-align: start;
+  color: #4D6F80;
+  padding: 40px 0; 
+}
+
+.area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.area button {
+  margin-right: 96px;
+  background-color: #39A151;
+  color: #FFF;
+  width: 200px;
+  height: 64px;
+  border-radius: 20px;
+  transition: .5s;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.point_details {
+  margin-top: 20px;
+}
+
+.point_details span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #4D6F80;
+}
+
+.point_details p {
+  font-size: 18px;
+}
+
+.title {
+  font-weight: 700;
+  color: #4D6F80;
+}

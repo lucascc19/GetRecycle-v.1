@@ -1,0 +1,43 @@
+.container {
+  background-color: #EBF5EB;
+  height: 100vh;
+}
+
+.container div h1{
+  text-align: start;
+  color: #4D6F80;
+  padding: 40px 0;
+  margin-left: 196px;
+}
+
+.add {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add button {
+  margin-right: 112px;
+  background-color: #39A151;
+  width: 250px;
+  height: 64px;
+  border-radius: 20px;
+  transition: .5s;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.add a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.message {
+  margin-left: 196px;
+}
+
+.flex_card {
+  display: flex;
+}

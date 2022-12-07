@@ -1,5 +1,32 @@
 {
-  "points": [],
+  "points": [
+    {
+      "name": "Ecopoint",
+      "email": "lucas@alu.ufc.br",
+      "contact": "(85) 9 99684503",
+      "address": "Vicente Carlos Santiago, 1661",
+      "state": "CE",
+      "city": "Fortaleza",
+      "category": {
+        "id": "3",
+        "name": "Papéis e papelão"
+      },
+      "id": 2
+    },
+    {
+      "name": "Sistema de Alocação",
+      "email": "lucas@alu.ufc.br",
+      "contact": "(85) 9 99684503",
+      "address": "Vicente Carlos Santiago, 1661",
+      "state": "CE",
+      "city": "Fortaleza",
+      "category": {
+        "id": "2",
+        "name": "Pilhas e baterias"
+      },
+      "id": 3
+    }
+  ],
   "categories": [
     {
       "id": 1,
@@ -24,12 +51,6 @@
     {
       "id": 6,
       "name": "Óleo de cozinha"
-    },
-    {
-      "id": 7
-    },
-    {
-      "id": 8
     }
   ]
 }

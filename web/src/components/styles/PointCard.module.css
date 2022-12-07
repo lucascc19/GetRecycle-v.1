@@ -1,0 +1,99 @@
+.point_card {
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: 1px solid #D3E2E5;
+  background-color: #FFF;
+  border-radius: 20px;
+  width: 26%;
+  height: 220px;
+  margin: 0.5%;
+}
+
+.point_card h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4D6F80;
+}
+
+.point_card p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #4D6F80;
+}
+
+.category_text {
+  display: flex;
+  align-items: center;
+}
+
+.category_text span{
+  display: block;
+  margin-right: 5px;
+  width: 24px;
+  height: 12px;
+  border-radius: 20px;
+  background-color: #FFD666;
+}
+
+.point_card_actions {
+  margin-top: 1.2em;
+  display: flex;
+  align-items: center;
+}
+
+.point_card_actions a,
+.point_card_actions button {
+  width: 90px;
+  height: 40px;
+  margin-right: 10px;
+  border: none;
+  background-color: #EBF2F5;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4D6F80;
+  transition: .5s;
+}
+
+.point_card_actions svg {
+  margin-right: 5px;
+}
+
+.point_card_actions a:hover,
+.point_card_actions button:hover {
+  background-color: #e2e2e2;
+}
+
+
+
+/* .category_text .lampada{
+  background-color: #FFD666;
+}
+
+.category_text .oleo{
+  background-color: #8D734B;
+}
+
+.category_text .pilha{
+  background-color: #0089A5;
+}
+
+.category_text .eletronicos{
+  background-color: #9700a5;
+}
+
+.category_text .organicos{
+  background-color: #a50000;
+}
+
+.category_text .papel{
+  background-color: #00A569;
+} */

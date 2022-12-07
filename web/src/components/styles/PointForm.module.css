@@ -55,6 +55,18 @@
   justify-content: space-between;
 }
 
+select {
+  background-color: #EBF5EB;
+  border: 1px solid #D3E2E5;
+  height: 60px;
+  border-radius: 20px;
+  padding: 0 20px;
+  outline: none;
+  color: #4F4F4F;
+  font-size: 16px;
+  font-weight: 600;
+}
+
 .form section div:first-child {
   width: 240px;
   margin-bottom: 0;

@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react'
 
-import { FiUpload } from 'react-icons/fi'
 import styles from '../styles/PointForm.module.css'
 
 import SubmitButton from './SubmitButton'
 import Input from './Input'
 import Select from './Select'
 
-function PointForm({ btnText }) {
+function PointForm({ handleSubmit, btnText, pointData}) {
   const [categories, setCategories] = useState([])
+  const [point, setPoint] = useState(pointData || {})
 
   useEffect(() => {
     fetch("http://localhost:5000/categories", {
@@ -24,12 +24,27 @@ function PointForm({ btnText }) {
     .catch((err) => console.log(err))
   }, [])
 
-  
+  const submit = (e) => {
+    e.preventDefault()
+    // console.log(point)
+    handleSubmit(point)
+  }
+
+  function handleChange(e) {
+    setPoint({...point, [e.target.name]: e.target.value})
+  }
+
+  function handleCategory(e) {
+    setPoint({...point, category: {
+      id: e.target.value,
+      name: e.target.options[e.target.selectedIndex].text,
+    },})
+  }
 
   return (
     <section className={styles.container}>
       <div className={styles.form}>
-        <form>
+        <form onSubmit={submit}>
           <fieldset>
             <legend>Dados</legend>
             <div>
@@ -38,6 +53,8 @@ function PointForm({ btnText }) {
                 text="Nome do ponto"
                 name="name"
                 placeholder=""
+                handleOnChange={handleChange}
+                value={point.name ? point.name : ''}
               />
             </div>
             <section>
@@ -47,6 +64,8 @@ function PointForm({ btnText }) {
                     text="E-mail"
                     name="email"
                     placeholder="example@example.com"
+                    handleOnChange={handleChange}
+                    value={point.email ? point.email : ''}
                 />
               </div>
               <div>
@@ -55,6 +74,8 @@ function PointForm({ btnText }) {
                   text="Whatsapp"
                   name="contact"
                   placeholder="(00) 0 0000 0000"
+                  handleOnChange={handleChange}
+                  value={point.contact ? point.contact : ''}
                 />
               </div>
             </section>
@@ -66,43 +87,22 @@ function PointForm({ btnText }) {
               <Input 
                 type="text"
                 text="Rua"
-                name="endereco"
+                name="address"
                 placeholder=""
+                handleOnChange={handleChange}
+                value={point.address ? point.address : ''}
               />
             </div>
             <section>
               <div>
-              <label>Estado (UF)</label>
-                <select name="estado"> 
-                <option value="estado">Selecione o Estado</option> 
-                <option value="ac">AC</option> 
-                <option value="al">AL</option> 
-                <option value="am">AM</option> 
-                <option value="ap">AP</option> 
-                <option value="ba">BA</option> 
-                <option value="ce">CE</option> 
-                <option value="df">DF</option> 
-                <option value="es">ES</option> 
-                <option value="go">GO</option> 
-                <option value="ma">MA</option> 
-                <option value="mt">MT</option> 
-                <option value="ms">MS</option> 
-                <option value="mg">MG</option> 
-                <option value="pa">PA</option> 
-                <option value="pb">PB</option> 
-                <option value="pr">PR</option> 
-                <option value="pe">PE</option> 
-                <option value="pi">PI</option> 
-                <option value="rj">RJ</option> 
-                <option value="rn">RN</option> 
-                <option value="ro">RO</option> 
-                <option value="rs">RS</option> 
-                <option value="rr">RR</option> 
-                <option value="sc">SC</option> 
-                <option value="se">SE</option> 
-                <option value="sp">SP</option> 
-                <option value="to">TO</option> 
-                </select>
+              <Input 
+                  type="text"
+                  text="Estado (UF)"
+                  name="state"
+                  placeholder="Example: CE"
+                  handleOnChange={handleChange}
+                  value={point.state ? point.state : ''}
+                />
               </div>
               <div>
                 <Input 
@@ -110,6 +110,8 @@ function PointForm({ btnText }) {
                   text="Cidade"
                   name="city"
                   placeholder=""
+                  handleOnChange={handleChange}
+                  value={point.city ? point.city : ''}
                 />
               </div>
             </section>
@@ -121,6 +123,8 @@ function PointForm({ btnText }) {
               name="category_id"
               text="Selecione os itens"
               options={categories}
+              handleOnChange={handleCategory}
+              value={point.category ? point.category.id: ''}
             />
           </fieldset>
           <div className={styles.btn}>
