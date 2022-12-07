@@ -27,7 +27,7 @@ function Map(){
       <div id="map"></div>
 
       <button>
-        <Link to="/addpoint">
+        <Link to="/newpoint">
           <FiPlus size={32} color="#fff" />
         </Link> 
       </button>

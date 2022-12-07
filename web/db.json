@@ -1,0 +1,35 @@
+{
+  "points": [],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Lâmpadas"
+    },
+    {
+      "id": 2,
+      "name": "Pilhas e baterias"
+    },
+    {
+      "id": 3,
+      "name": "Papéis e papelão"
+    },
+    {
+      "id": 4,
+      "name": "Resíduos Eletrônicos"
+    },
+    {
+      "id": 5,
+      "name": "Resíduos Orgânicos"
+    },
+    {
+      "id": 6,
+      "name": "Óleo de cozinha"
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    }
+  ]
+}

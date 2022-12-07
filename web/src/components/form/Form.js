@@ -30,13 +30,6 @@ function Form() {
                 <input type="text" placeholder='(00) 0 0000 0000' />
               </div>
             </section>
-
-            <label>Imagem do ponto de coleta</label>
-
-            <div className={styles.archive}>
-              <label for="archive"><FiUpload /></label>
-              <input id="archive" type="file" />
-            </div>
           </fieldset>
 
           <fieldset>
@@ -125,7 +118,9 @@ function Form() {
               </div>
             </div>
           </fieldset>
-          <SubmitButton text="Cadastrar"/>
+          <div className={styles.btn}>
+            <SubmitButton text="Cadastrar"/>
+          </div>
         </form>
       </div>
     </section>
