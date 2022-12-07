@@ -38,3 +38,14 @@
   align-items: center;
   text-decoration: none;
 }
+
+@media (max-width: 480px) {
+  .logo{
+    width: 180px;
+  }
+  
+  .button{
+    width: 180px;
+  }
+
+}

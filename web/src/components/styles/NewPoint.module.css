@@ -1,0 +1,14 @@
+.container {
+  background-color: #EBF5EB;
+}
+
+.container p {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: #8FA7B3;
+  padding: 40px 0;
+  margin-left: 96px;
+}
