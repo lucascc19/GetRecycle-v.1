@@ -81,3 +81,33 @@ select {
   text-align: end;
   margin-top: 50px;
 }
+
+@media (min-width: 480px) and (max-width: 752px) {
+  .form {
+    width: 350px;
+  }
+
+  .form form {
+    width: 300px;
+  }
+
+  .form legend {
+    margin-bottom: 30px;
+    padding-top: 52px;
+  }
+
+  .form section {
+    display: block;
+    width: 300px;
+  }
+
+  .form section div:first-child {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  
+  .form section div:last-child {
+    width: 300px;
+  }
+
+}

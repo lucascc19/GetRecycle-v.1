@@ -37,7 +37,7 @@ function Points() {
   }, [])
 
   function removePoint(id) {
-    fetch(`http://localhost:5000/point/${id}`, {
+    fetch(`http://localhost:5000/points/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -51,38 +51,38 @@ function Points() {
   }
 
   return (
-    <section className={styles.points_container}>
+    <section>
       <Sidebar />
-      <div>
-        <div className={styles.add}>
-          <h1>Pontos de coleta cadastrados</h1>
-          <button>
-            <a href='/newpoint'>Adicionar novo ponto</a>
-          </button>
-        </div>
-        <div className={styles.message}>
-          {message && <Message type="success" msg={message} />}
-          {pointMessage && <Message type="success" msg={pointMessage} />}
-          <section className={styles.flex_card}>
-            {points.length > 0 &&
-              points.map((point) => (
-                <PointCard 
-                  id={point.id}
-                  name={point.name}
-                  category={point.category.name}
-                  key={point.id}
-                  handleRemove={removePoint}
-                />
-              ))}
-              <div>
-                {!removeLoading && <Loading />}
-                {removeLoading && points.length === 0 && (
-                <p>Não há projetos cadastrados!</p>
-                )}
-              </div>
-          </section>
-        </div>
-      </div>
+      <section className={styles.container_1}>
+          <div className={styles.add}>
+            <h1>Pontos de coleta cadastrados</h1>
+            <button className={styles.btn}>
+              <a href='/newpoint'>Novo ponto</a>
+            </button>
+          </div>
+          <div>
+            {message && <Message type="success" msg={message} />}
+            {pointMessage && <Message type="success" msg={pointMessage} />}
+            <div className={styles.flex_card}>
+              {points.length > 0 &&
+                points.map((point) => (
+                  <PointCard 
+                    id={point.id}
+                    name={point.name}
+                    category={point.category.name}
+                    key={point.id}
+                    handleRemove={removePoint}
+                  />
+                ))}
+                <div>
+                  {!removeLoading && <Loading />}
+                  {removeLoading && points.length === 0 && (
+                  <p>Não há projetos cadastrados!</p>
+                  )}
+                </div>
+            </div>
+          </div>
+      </section>
     </section>
   )
 }

@@ -1,19 +1,19 @@
 .point_card {
-  padding-left: 25px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
   border: 1px solid #D3E2E5;
   background-color: #FFF;
   border-radius: 20px;
-  width: 22%;
-  height: 220px;
-  margin: 0.5%;
+  width: 250px;
+  height: 200px;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 
 .point_card h4 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   color: #4D6F80;
 }
@@ -22,6 +22,11 @@
   font-size: 18px;
   font-weight: 600;
   color: #4D6F80;
+}
+
+.point_card section {
+  display: flex;
+  flex-direction: column;
 }
 
 .category_text {
@@ -39,16 +44,15 @@
 }
 
 .point_card_actions {
-  margin-top: 1.2em;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .point_card_actions a,
 .point_card_actions button {
   width: 90px;
   height: 40px;
-  margin-right: 10px;
   border: none;
   background-color: #EBF2F5;
   border-radius: 10px;
@@ -63,6 +67,12 @@
   transition: .5s;
 }
 
+.point_card_actions button {
+  
+  margin-right: 10px;
+  
+}
+
 .point_card_actions svg {
   margin-right: 5px;
 }
@@ -71,8 +81,6 @@
 .point_card_actions button:hover {
   background-color: #e2e2e2;
 }
-
-
 
 /* .category_text .lampada{
   background-color: #FFD666;
