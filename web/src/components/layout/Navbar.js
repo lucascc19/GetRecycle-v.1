@@ -9,7 +9,7 @@ function Navbar() {
           <img src={logo} alt="GetRecycle" className={styles.logo} />
         </Link>
         <button className={styles.button}>
-          <Link to="/user" >Acesso restrito</Link>
+          <Link to="/points" >Acesso restrito</Link>
         </button>
     </nav>
   )

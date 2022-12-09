@@ -1,15 +1,14 @@
 .container {
   width: 89%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
 }
 
-.box_text {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
+.background_image {
+  width: 600px;
+  height: 600px;
+  margin-left: 100px;
 }
 
 .box_text h1 {
@@ -17,7 +16,7 @@
   font-weight: 700;
   line-height: 80px;
   width: 394px;
-  margin-top: 60px;
+  margin-top: 150px;
   margin-bottom: 70px;
   color: #FFF;
 }
@@ -33,7 +32,6 @@
 .background_image {
   width: 600px;
   height: 600px;
-  display: flex;
 }
 
 .button {
@@ -68,11 +66,14 @@
 
   .button {
     margin-top: 40px;
-
   }
 }
 
 @media (max-width: 616px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  
   .box_text h1 {
     font-size: 5rem;
     font-weight: 700;

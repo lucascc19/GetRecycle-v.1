@@ -74,6 +74,8 @@
 @media (max-width: 500px){
   .page_map button{
     background-color: #FFD666;
+    margin-bottom: 25px;
+    margin-right: 60px;
   }
 }
 

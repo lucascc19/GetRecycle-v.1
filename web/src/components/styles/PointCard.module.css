@@ -46,7 +46,6 @@
 .point_card_actions {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .point_card_actions a,
@@ -82,7 +81,7 @@
   background-color: #e2e2e2;
 }
 
-/* .category_text .lampada{
+.category_text .lampada{
   background-color: #FFD666;
 }
 
@@ -104,4 +103,4 @@
 
 .category_text .papel{
   background-color: #00A569;
-} */
+}
