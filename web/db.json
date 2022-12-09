@@ -1,30 +1,43 @@
 {
   "points": [
     {
-      "name": "Ecopoint",
-      "email": "lucas@alu.ufc.br",
+      "name": "Ecopoint Russas",
+      "email": "lucasroliveira19@outlook.com",
       "contact": "(85) 9 99684503",
       "address": "Vicente Carlos Santiago, 1661",
       "state": "CE",
       "city": "Fortaleza",
       "category": {
-        "id": "3",
-        "name": "Papéis e papelão"
+        "id": "1",
+        "name": "Lâmpadas"
       },
-      "id": 2
+      "id": 6
     },
     {
-      "name": "Sistema de Alocação",
-      "email": "lucas@alu.ufc.br",
+      "name": "Ecopoint Quixadá",
+      "email": "lucasroliveira19@outlook.com",
+      "contact": "(85) 9 99684503",
+      "address": "Vicente Carlos Santiago, 1661",
+      "state": "CE",
+      "city": "Fortaleza",
+      "category": {
+        "id": "5",
+        "name": "Orgânicos"
+      },
+      "id": 7
+    },
+    {
+      "name": "Ecopoint Fortaleza",
+      "email": "lucasroliveira19@outlook.com",
       "contact": "(85) 9 99684503",
       "address": "Vicente Carlos Santiago, 1661",
       "state": "CE",
       "city": "Fortaleza",
       "category": {
         "id": "2",
-        "name": "Pilhas e baterias"
+        "name": "Pilhas"
       },
-      "id": 3
+      "id": 8
     }
   ],
   "categories": [
@@ -34,23 +47,23 @@
     },
     {
       "id": 2,
-      "name": "Pilhas e baterias"
+      "name": "Pilhas"
     },
     {
       "id": 3,
-      "name": "Papéis e papelão"
+      "name": "Papel"
     },
     {
       "id": 4,
-      "name": "Resíduos Eletrônicos"
+      "name": "Eletrônicos"
     },
     {
       "id": 5,
-      "name": "Resíduos Orgânicos"
+      "name": "Orgânicos"
     },
     {
       "id": 6,
-      "name": "Óleo de cozinha"
+      "name": "Óleo"
     }
   ]
 }

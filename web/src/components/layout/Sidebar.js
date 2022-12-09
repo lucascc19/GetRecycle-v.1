@@ -6,7 +6,7 @@ import logo from '../../img/Logo-min.png'
 import styles from '../styles/Sidebar.module.css'
 
 function Sidebar() {
-  const { goBack } = useHistory();
+  const {goBack} = useHistory();
 
     return (
         <aside className={styles.app_sidebar}>

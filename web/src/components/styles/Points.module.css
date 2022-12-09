@@ -1,25 +1,29 @@
-.container {
+.container_1 {
   background-color: #EBF5EB;
   height: 100vh;
+  padding-top: 50px;
+  padding-left: 176px;
+  padding-right: 80px;
 }
 
-.container div h1{
-  text-align: start;
+.container_1 div h1{
+  font-size: 32px;
+  font-weight: 700;
   color: #4D6F80;
-  padding: 40px 0;
-  margin-left: 196px;
 }
 
 .add {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.add button {
-  margin-right: 112px;
+.btn {
   background-color: #39A151;
-  width: 250px;
+  color: #FFF;
+  width: 170px;
   height: 64px;
   border-radius: 20px;
   transition: .5s;
@@ -29,15 +33,30 @@
   font-weight: 800;
 }
 
-.add a {
+.btn a {
   text-decoration: none;
   color: #FFF;
 }
 
-.message {
-  margin-left: 196px;
+.btn:hover{
+  background-color: #37DF5D;
 }
 
 .flex_card {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 890px) {
+  .btn{
+    margin-top: 20px;
+
+  }
+}
+
+@media (max-width: 500px) {
+  .container_1 div h1 {
+    font-size: 28px;
+  }
 }

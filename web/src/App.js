@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import NewPoint from './components/pages/NewPoint'
 import Home from './components/pages/Home'
@@ -15,7 +15,7 @@ function App() {
         <Home />
       </Route>
       <Route path="/user">
-        <RestrictedAccess />
+        <RestrictedAccess />  
       </Route>
       <Route path="/map">
         <Map />
@@ -23,13 +23,13 @@ function App() {
       <Route path="/newpoint">
         <NewPoint />
       </Route>
-      <Route path="/points/">
+      <Route path="/points">
         <Points />
       </Route>
       <Route path="/point/:id">
         <Point />
       </Route>
-    </Switch>
+    </Switch>   
    </Router>
   )
 }

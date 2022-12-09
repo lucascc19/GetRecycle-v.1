@@ -5,6 +5,7 @@ import Sidebar from '../layout/Sidebar'
 import Loading from '../layout/Loading'
 import styles from '../styles/Point.module.css'
 import PointForm from '../form/PointForm'
+import Message from '../layout/Message'
 
 function Point() {
   const { id } = useParams()
@@ -13,8 +14,6 @@ function Point() {
   const [showPointForm, setShowPointForm] = useState(false)
   const [message, setMessage] = useState('')
   const [type, setType] = useState('success')
-
-
 
   useEffect(() => {
     // to see the loading
@@ -59,31 +58,34 @@ function Point() {
     <div>
       <Sidebar />
         {point.name ? (
-          <div className={styles.container}>
+          <div className={styles.point_container}>
             <div className={styles.area}>
               <h1>Ponto de coleta</h1>
               <button onClick={togglePointForm}>
                 {!showPointForm ? 'Editar ponto' : 'Fechar'}
               </button>
             </div>  
+            <div className={styles.message}>
+              {message && <Message type={type} msg={message} />}
+            </div>
             {!showPointForm ? (
-              <div className={styles.point_details}>
-                <p className={styles.title}>
-                  <span></span> {point.name}
-                </p>
-                <p>
-                  <span>E-mail:</span> {point.email}
-                </p>
-                <p>
-                  <span>Whatsapp:</span> {point.contact}
-                </p>
-                <p>
-                  <span>Endereço:</span> {point.address}
-                </p>
-                <p>
-                  <span>Ítem de coleta:</span> {point.category.name}
-                </p>
-              </div>
+              <section className={styles.section}>
+                <div className={styles.form}>
+                  <p>{point.name}</p>
+                  <p>
+                    <span>E-mail:</span> {point.email}
+                  </p>
+                  <p>
+                    <span>Whatsapp:</span> {point.contact}
+                  </p>
+                  <p>
+                    <span>Endereço:</span> {point.address}
+                  </p>
+                  <p>
+                    <span>Ítem de coleta:</span> {point.category.name}
+                  </p>
+                </div>
+              </section>
             ) : (
               <div>
                 <PointForm 
@@ -95,7 +97,9 @@ function Point() {
             )}
           </div>
         ):(
-          <Loading />  
+          <div className={styles.loading}>
+            <Loading />  
+          </div>
         )}
     </div>
   )

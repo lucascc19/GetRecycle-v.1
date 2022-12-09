@@ -7,12 +7,16 @@ function PointCard({ id, name, category, handleRemove }) {
     handleRemove(id)
   }
 
+  //irineu willen landim 
+
   return (
     <div className={styles.point_card}>
-      <h4>{name}</h4>
-      <p className={styles.category_text}>
-        <span></span> {category}
-      </p>
+      <section>
+        <h4>{name}</h4>
+        <p className={styles.category_text}>
+          <span className={`${styles[category.toLowerCase()]}`}></span> {category}
+        </p>
+      </section>
       <div className={styles.point_card_actions}>
         <button>
           <a href={`/point/${id}`}>
