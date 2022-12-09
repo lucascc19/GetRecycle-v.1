@@ -12,20 +12,18 @@ function Home(){
       <Navbar />
       <section className={styles.container}>
         <div className={styles.box_text}>
-          <div className={styles.descriptions}>
-            <h1 className={styles.title}>Comece você a transformar o mundo</h1>
-            <p className={styles.subtitle}>Aqui você encontra pontos de coleta com eficiência</p>
-          </div>
-          <img src={recycle} alt="Recycling" className={styles.background_image} />
+          <h1>Comece você a transformar o mundo</h1>
+          <p>Aqui você encontra pontos de coleta com eficiência</p>
         </div>
-      </section>  
-        <div className={styles.container_button}>
-          <button className={styles.button} type='button'>
+        <img src={recycle} alt="Recycling" className={styles.background_image} />
+        <div className={styles.button}>
+          <button type='button'>
             <Link to="/map">
               <FiArrowRight size={40} color="#8D734B" />
             </Link>
           </button>
-        </div>
+        </div>      
+      </section>  
     </div>
     // <div>
     //   <Navbar />
