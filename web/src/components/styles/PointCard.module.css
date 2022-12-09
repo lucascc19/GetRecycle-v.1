@@ -32,15 +32,16 @@
 .category_text {
   display: flex;
   align-items: center;
+  margin-top: 5px;
 }
 
 .category_text span{
   display: block;
-  margin-right: 5px;
-  width: 24px;
-  height: 12px;
+  margin-right: 8px;
+  width: 14px;
+  height: 14px;
   border-radius: 20px;
-  background-color: #FFD666;
+  background-color: #ccc;
 }
 
 .point_card_actions {
@@ -67,9 +68,7 @@
 }
 
 .point_card_actions button {
-  
   margin-right: 10px;
-  
 }
 
 .point_card_actions svg {
@@ -81,23 +80,23 @@
   background-color: #e2e2e2;
 }
 
-.category_text .lampada{
+.category_text .lâmpadas{
   background-color: #FFD666;
 }
 
-.category_text .oleo{
+.category_text .óleo{
   background-color: #8D734B;
 }
 
-.category_text .pilha{
+.category_text .pilhas{
   background-color: #0089A5;
 }
 
-.category_text .eletronicos{
+.category_text .eletrônicos{
   background-color: #9700a5;
 }
 
-.category_text .organicos{
+.category_text .orgânicos{
   background-color: #a50000;
 }
 

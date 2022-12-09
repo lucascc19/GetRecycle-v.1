@@ -54,3 +54,9 @@
 
   }
 }
+
+@media (max-width: 500px) {
+  .container_1 div h1 {
+    font-size: 28px;
+  }
+}

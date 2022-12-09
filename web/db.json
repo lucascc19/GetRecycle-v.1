@@ -1,7 +1,20 @@
 {
   "points": [
     {
-      "name": "Ecopoint Quixadá teste teste",
+      "name": "Ecopoint Russas",
+      "email": "lucasroliveira19@outlook.com",
+      "contact": "(85) 9 99684503",
+      "address": "Vicente Carlos Santiago, 1661",
+      "state": "CE",
+      "city": "Fortaleza",
+      "category": {
+        "id": "1",
+        "name": "Lâmpadas"
+      },
+      "id": 6
+    },
+    {
+      "name": "Ecopoint Quixadá",
       "email": "lucasroliveira19@outlook.com",
       "contact": "(85) 9 99684503",
       "address": "Vicente Carlos Santiago, 1661",
@@ -9,35 +22,22 @@
       "city": "Fortaleza",
       "category": {
         "id": "5",
-        "name": "Resíduos Orgânicos"
+        "name": "Orgânicos"
       },
-      "id": 3
+      "id": 7
     },
     {
-      "name": "Ecopoint Sobral",
+      "name": "Ecopoint Fortaleza",
       "email": "lucasroliveira19@outlook.com",
       "contact": "(85) 9 99684503",
       "address": "Vicente Carlos Santiago, 1661",
       "state": "CE",
       "city": "Fortaleza",
       "category": {
-        "id": "4",
-        "name": "Resíduos Eletrônicos"
+        "id": "2",
+        "name": "Pilhas"
       },
-      "id": 4
-    },
-    {
-      "name": "Ecopoint Canindé",
-      "email": "lucasroliveira19@outlook.com",
-      "contact": "(85) 9 99684503",
-      "address": "Vicente Carlos Santiago, 1661",
-      "state": "CE",
-      "city": "Fortaleza",
-      "category": {
-        "id": "5",
-        "name": "Resíduos Orgânicos"
-      },
-      "id": 5
+      "id": 8
     }
   ],
   "categories": [
@@ -47,23 +47,23 @@
     },
     {
       "id": 2,
-      "name": "Pilhas e baterias"
+      "name": "Pilhas"
     },
     {
       "id": 3,
-      "name": "Papéis e papelão"
+      "name": "Papel"
     },
     {
       "id": 4,
-      "name": "Resíduos Eletrônicos"
+      "name": "Eletrônicos"
     },
     {
       "id": 5,
-      "name": "Resíduos Orgânicos"
+      "name": "Orgânicos"
     },
     {
       "id": 6,
-      "name": "Óleo de cozinha"
+      "name": "Óleo"
     }
   ]
 }
